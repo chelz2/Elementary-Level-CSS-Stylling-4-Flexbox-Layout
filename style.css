@@ -68,3 +68,38 @@ p {
   background: #f4f4f4;
   border-bottom: 1px solid #ccc;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-menu li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+  }
+
+  .main-menu li.last_list_item {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .main aside {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
